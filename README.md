@@ -22,7 +22,9 @@ This project builds a **credit scoring system** for DeFi wallets using transacti
 * 🧠 Neural Network
 
 ✅ Scores wallets into custom credit score bands
+
 ✅ Compares model performance with precision, recall, F1
+
 ✅ Generates a cleaned CSV file ready for further analysis or integration!
 
 ---
