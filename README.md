@@ -1,6 +1,5 @@
 # 🦄 DeFi Wallet Credit Scoring with Machine Learning 💳
 
-Welcome to our magical journey through the world of **decentralized finance** and **machine learning**! ✨
 
 This project builds a **credit scoring system** for DeFi wallets using transaction-level data from the **Aave V2 protocol**. We extract key wallet-level features, handle missing values, engineer insights, and train multiple classification models — all to predict a wallet's creditworthiness.
 
@@ -29,17 +28,28 @@ This project builds a **credit scoring system** for DeFi wallets using transacti
 ```bash
 Zeru/
 ├── Data/
-│   └── final_dataset.csv          # Processed features + credit score
+│ └── final_dataset.csv # Processed features + credit score
+│
 ├── Scripts/
-│   ├── logistic_regression.py     # Logistic Regression classifier
-│   ├── svm_poly.py                # SVM with polynomial kernel
-│   ├── neural_network.py          # Simple NN using sklearn MLP
-│   ├── compare_models.py          # Performance comparison across models
-│   ├── fill_amount_usd.py         # Fills missing USD values using static prices
-│   └── utils.py                   # Utility functions for data loading & scoring
-├── main.py                        # 🎬 Orchestrates the entire pipeline
-├── README.md                      # You’re reading it!
-└── requirements.txt               # All dependencies
+│ ├── parse_transactions.py # Extracts relevant fields from raw Aave V2 data
+│ ├── load_raw_data.py # Loads JSON or raw dump into structured format
+│ ├── fill_amount_usd.py # Fills missing USD values using static token prices
+│ ├── aggregate_credit_data.py # Aggregates transactional data into wallet-level metrics
+│ ├── compute_credit_scores.py # Calculates credit score from wallet features
+│ ├── create_labels.py # Creates creditworthiness labels (e.g., binary classification)
+│ ├── feature_engineering.py # Derived features, scaling, missing value imputation
+│ ├── generate_features.py # Pipeline wrapper for all feature-related steps
+│ ├── visualize.py # 📊 Distribution plots & trends (used in main.py too)
+│ ├── utils.py # Shared functions (e.g., data loaders, scorers)
+│ ├── logistic_model.py # Logistic Regression classifier
+│ ├── svm_model.py # SVM with polynomial kernel
+│ ├── nn_model.py # Neural Network classifier using sklearn MLP
+│ ├── compare_models.py # Accuracy, F1, ROC-AUC comparison across models
+│ └── __init__.py # Initializations
+│
+├── main.py # Orchestrates the full pipeline: ETL → Models → Viz
+├── requirements.txt # Dependencies to install via pip
+└── README.md # You’re reading it!
 ```
 
 ---
@@ -104,7 +114,7 @@ python main.py
 
 ---
 
-## 👩‍💻 Made With Love By
+## 👩‍💻✨ Made With Love By
 
 * Vrushali Kadam 💙
 * Python, pandas, sklearn, numpy, matplotlib
