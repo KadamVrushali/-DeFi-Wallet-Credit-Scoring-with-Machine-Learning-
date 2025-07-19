@@ -30,13 +30,13 @@ This project builds a **credit scoring system** for DeFi wallets using transacti
 Zeru/
 ├── Data/
 │   └── final_dataset.csv          # Processed features + credit score
-├── Models/
+├── Scripts/
 │   ├── logistic_regression.py     # Logistic Regression classifier
 │   ├── svm_poly.py                # SVM with polynomial kernel
-│   └── neural_network.py          # Simple NN using sklearn MLP
-├── compare_models.py              # Performance comparison across models
-├── fill_amount_usd.py            # Fills missing USD values using static prices
-├── utils.py                      # Utility functions for data loading & scoring
+│   ├── neural_network.py          # Simple NN using sklearn MLP
+│   ├── compare_models.py          # Performance comparison across models
+│   ├── fill_amount_usd.py         # Fills missing USD values using static prices
+│   └── utils.py                   # Utility functions for data loading & scoring
 ├── main.py                        # 🎬 Orchestrates the entire pipeline
 ├── README.md                      # You’re reading it!
 └── requirements.txt               # All dependencies
