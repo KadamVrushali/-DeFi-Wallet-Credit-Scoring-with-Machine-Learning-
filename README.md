@@ -8,9 +8,13 @@ This project builds a **credit scoring system** for DeFi wallets using transacti
 ## 🔍 What This Project Does
 
 ✅ Loads raw DeFi transaction data (JSON)
+
 ✅ Fills missing USD values using token price mapping
+
 ✅ Aggregates data into wallet-level summaries
+
 ✅ Builds features like total deposits, loan ratios, and token diversity
+
 ✅ Trains and compares 3 machine learning models:
 
 * 🎯 Logistic Regression
